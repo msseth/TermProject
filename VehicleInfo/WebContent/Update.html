@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Update Vehicle Info</title>
+<style>
+	.main
+	{
+		width:100%;
+		float:left;
+		height:auto;
+		align:center;
+		margin-left: 25%;
+	}
+	#textbox
+	{
+		cellpadding:10px;
+		margin-bottom:10px;
+		font-family:Calibri
+	}
+</style>
+</head>
+<body>
+
+<div class="main">
+
+<h2>Update Info</h2>
+<form action="Update" method="POST">
+
+			<div id="textbox">
+			Password: <input name="password" type="password" placeholder="New Password"/></br>
+			</div>
+			<div id="textbox">
+			Email: <input name="email" type="text" placeholder="New Email"/></br>
+			</div>
+           
+            <div id="textbox">
+            Date of Purchase:
+			<input type="text" name="day" placeholder="Day" size="2"/>
+            <select name="month">
+            <option value="Select birth month" selected>Month</option>
+ 		 	<option value="January">January</option>
+ 		 	<option value="February">February</option>
+  			<option value="March">March</option>
+  			<option value="April">April</option>
+  			<option value="May">May</option>
+ 		 	<option value="June">June</option>
+  			<option value="July">July</option>
+  			<option value="August">August</option>
+  			<option value="September">September</option>
+ 		 	<option value="October">October</option>
+  			<option value="November">November</option>
+  			<option value="December">December</option>
+  			
+		</select>
+<input type="text"  name="year"  placeholder="Year" size="4"/><br/>
+</div>
+<div id="textbox">
+
+Country: <input type="text"  name="country" placeholder="New Country"/><br/>
+</div>
+ <input type="submit" value="Update"/>
+
+
+            
+</form>
+	
+</div>
+
+</body>
+</html>
